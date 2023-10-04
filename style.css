@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#content-container {
+  display: flex;
+  margin: 20px
+}
+
+#card {
+  box-shadow: 0 0 5px #636363;
+  border-radius: 4px;
+  padding: 12px;
+  margin: 8px;
+  width: 230px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: 
+    ". img text text "
+    ". img text text "
+    "rel rel rel rel"
+}
+
+#card:hover {
+  background-color: #dfdfdf;
+}
+
+img {
+  width: 50px;
+  border-radius: 50%;
+  grid-area: img;
+  align-self: center;
+}
+
+#card-content {
+  grid-area: text;
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 5px
+}
+
+#related {
+  display: flex;
+  justify-content: space-between;
+  grid-area: rel;
+}
+
+#related a {
+  text-decoration: none;
+  color: #636363;
+}
